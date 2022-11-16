@@ -16,7 +16,7 @@ function MessageComponent({ message }: { message: MessageTP }) {
                     <div className={`${isUser ? "bg-indigo-500 ml-auto order-2" : "bg-violet-500 text-left"} rounded-md px-2 py-2 text-white font-semibold`}>
                         <p>{message.message}</p>
                     </div>
-                    <p className={`text-[0.65rem] italic text-gray-400 ${isUser && 'text-right'}`}>{new Date(message.created_at).toLocaleString()}</p>
+                    {/* <p className={`text-[0.65rem] italic text-gray-400 ${isUser && 'text-right'}`}>{new Date(message.created_at).toLocaleString()}</p> */}
                 </div>
             </div>
         </div>
